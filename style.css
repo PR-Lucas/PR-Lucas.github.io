@@ -1,0 +1,148 @@
+@font-face {
+	font-family: 'Archivo';
+	src: url('fonts/ArchivoBlack-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'eras';
+  src: url('fonts/erasdemiregular.otf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  background-color: black;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  font-family: 'eras';
+}
+
+li{
+  list-style-type: none;
+  margin: 2%;
+}
+a{
+  color: white;
+  text-decoration:none;
+}
+
+ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  font-size: 150%;
+}
+
+#logo{
+  height: 60%;
+  margin-left: 2%;
+}
+
+#app {
+    height: 100vh;
+    flex-direction: column;
+  
+    align-items: center;
+  }
+    
+  
+    h1, p {
+      font-family: 'eras';
+  
+      text-align: center;
+    }
+    
+    h1 {
+      margin-top: 10%;
+    }
+    
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+  
+    button{
+      margin-top: 2%;
+      font-family: 'eras';
+      font-size: 120%;
+      padding: 5px;
+    }
+
+
+
+
+
+
+    .projets{
+        text-align: center;
+        color: white;
+        font-family: 'eras';
+        padding: 8% 0 8% 0;
+        border-bottom: 7px solid white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #cordees{
+        background-color : white;
+        padding: 35px;
+        border-radius: 10px;
+    }
+    
+    .gauche img{
+        width: 30%;
+    }
+    
+    .gauche{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .droite img{
+        width: 60%;
+    }
+    .lien{
+        color: black;
+        background-color: white;
+        padding: 7px;
+        border-radius: 10px;
+    }
+    
+    #lieninsta{
+        text-decoration: underline;
+    }
+    
+    .affiche{
+        background-color: white;
+        padding: 2%;
+    }
+    
+    #divphotos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5%;
+        gap: 20px;
+    }
+    
+    #divphotos img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    
+        background-color: #000;
+    }
+    
+    #divphotos img.portrait {
+        grid-row: span 2;
+    }
+    
+    #divphotos img.paysage {
+        grid-row: span 1;
+    }
