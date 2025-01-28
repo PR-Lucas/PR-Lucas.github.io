@@ -185,4 +185,8 @@ ul{
   nav ul li{
     margin: 0.5%;
   }
+
+  #divphotos {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
