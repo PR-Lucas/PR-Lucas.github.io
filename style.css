@@ -39,8 +39,19 @@ ul{
 }
 
 #logo{
-  height: 60%;
-  margin-left: 2%;
+  height: 80%;
+  position:relative;
+  
+}
+
+.logofond{
+  background: url("images/lp_logoV3.svg") no-repeat center center;
+  height : 100vh;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #app {
@@ -50,143 +61,284 @@ ul{
     align-items: center;
   }
     
-  
+  #app h1{
+    font-size: 900%;
+  }
+  #app p{
+    font-size: 160%;
+  }
+
     h1, p {
-      font-family: 'eras';
+      font-family: 'montserrat';
+
   
       text-align: center;
     }
     
-    h1 {
-      margin-top: 10%;
-    }
     
     body {
       background-color: black;
       color: white;
-      text-align: center;
+
+    }
+  
+    .boutons{
+      margin-top: 2%;
+      font-family: 'montserrat';
+      font-size: 130%;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: transparent;
+      border : 1px solid #646464;
+      margin : 30px;
+      margin-top : 5%;
+      transition: 0.3s;
+    }
+
+    .boutons:hover{
+      transform: scale(1.05);
+      border: 1px solid #1a1a1a;
     }
 
 
 
+    .heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.boutonsdiv{
+  width: 100%;
+  text-align: center;
+}
+
+
+    
 
 
 
-    .projets{
-        text-align: center;
-        color: white;
-        font-family: 'eras';
-        padding: 8% 0 8% 0;
-        border-bottom: 7px solid white;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    #cordees{
-        background-color : white;
-        padding: 35px;
-        border-radius: 10px;
-    }
-    
-    .gauche img{
-        width: 30%;
-    }
-    
-    .gauche{
-        display: grid;
-        align-items: center;
-        justify-items: center;
-    }
-    
-    .droite img{
-        width: 60%;
-    }
-    .lien{
-        color: black;
-        background-color: white;
-        padding: 7px;
-        border-radius: 10px;
-    }
-    
-    #lieninsta{
-        text-decoration: underline;
-    }
-    
-    .affiche{
-        background-color: white;
-        padding: 2%;
-    }
-    
-    #divphotos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 5%;
-        gap: 20px;
-    }
-    
-    #divphotos img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    
-        background-color: #000;
-    }
-    
-    #divphotos img.portrait {
-        grid-row: span 2;
-    }
-    
-    #divphotos img.paysage {
-        grid-row: span 1;
-    }
 
+.projets-container {
+    padding: 100px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
-@media (max-width: 700px) {
-  #youtubevideo{
-    position: relative;
-    width: 90%;
-    aspect-ratio: 16 / 9;
-  }
+.section-title {
+    font-family: 'montserrat', sans-serif; 
+    font-size: 3rem;
+    margin-bottom: 50px;
+    border-left: 10px solid white;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
 
-  #youtubevideo iframe {
+.grid-projets {
+    column-count: 2; 
+    column-gap: 40px;
     width: 100%;
-    height: 100%;
+}
+
+.projet-card {
+    display: inline-block; 
+    width: 100%;
+    margin-bottom: 40px; 
+    text-decoration: none;
+    color: white;
+}
+
+.projet-image {
+    position: relative;
+    
+    border : 1px solid #1a1a1a;
+    border-radius : 10px;
+    padding: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.projet-card:hover .projet-image {
+    border: 0px; 
+}
+
+.projet-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+.projet-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.projet-overlay button {
+    font-family: 'montserrat', sans-serif;
+    font-size: 100%;;
+    padding: 10px;
+    margin : 10px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    transition : 0.3s;
+}
+
+
+.projet-overlay button:hover {
+  transform: scale(1.05);
+  border: 1px solid rgb(194, 192, 192);
+    
+}
+
+
+
+.projet-card:hover .projet-image img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+.projet-card:hover .projet-overlay {
+    opacity: 1;
+}
+
+.projet-info {
+    margin-top: 20px;
+}
+
+.projet-info h3 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.projet-info p {
+    font-family: 'eras', sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    text-align: left; 
+}
+
+
+#app {
+    height: auto; 
+    min-height: 100vh;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .grid-projets {
+        display: flex !important;
+        flex-direction: column;
+        column-count: auto !important; 
+        gap: 60px;
+    }
+
+    .projet-card {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .projet-image {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        padding: 20px;
+        flex-direction: column;
+        overflow: visible; 
+        object-fit: contain;
+    }
+
+    .projet-image img{
+        width: 100%;
+        height : auto;
+        object-fit: contain;
+    }
+
+
+    .projet-overlay {
+        position: relative; 
+        opacity: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .projet-overlay button {
+        width: 100%;
+        max-width: 280px;
+        margin: 0;
+        background-color: #1a1a1a;
+    }
+
+    .projet-info {
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .projet-info h3 {
+        font-size: 1.4rem;
+        justify-content: center;
+        display: flex;
+    }
+
+    .projet-info p {
+        text-align: center !important; 
+        opacity: 0.9;
+    }
+
+    .projet-image img {
+        filter: grayscale(0%);
+        transform: none !important;
+        max-height: 250px;
+    }
+
+    #app h1{
+      font-size: 250%;
+    margin-bottom: 30px;
+  }
+  #app p{
+    font-size: 100%;
+    margin-bottom : 20px;
   }
 
-  .projets{
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 5%;
+  .boutons{
+    margin: 20px;
   }
 
-  .gauche h1, p, a{
-    margin: 2%;
+  .boutonsdiv{
+  width: 50%;
+  text-align: center;
+  display: grid;
   }
 
-  .gauche{
-    padding-bottom: 5%; 
+  #app{
+    padding: 20px;
   }
 
-  .droite img{
-    width: 90%;
-  }
-
-  nav{
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 100%;
-    justify-items: center;
-    margin-bottom: 10%;
-  }
-  nav ul{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  nav ul li{
-    margin: 0.5%;
-  }
-
-  #divphotos {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }

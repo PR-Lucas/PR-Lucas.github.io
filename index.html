@@ -5,21 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Lucas Perdu</title>
+    <link rel="icon" type="image/x-icon" href="images/lp_logoV3.svg">
 </head>
-<header>
-    <nav>
-        <img src="images/lp_logo.png" alt="" id="logo">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="photos.html">Photographie</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
     <div id="app" class='fondNoir'>
-        <h1>Lucas Perdu</h1>
-        <p>Bonjour et bienvenue sur mon portfolio, venez découvrir ce que je fais.</p>
+        <div class ='logofond'>
+            <h1>LUCAS PERDU</h1>
+            <p>Bienvenue sur mon portfolio. Entrez dans mon univers et découvrez mes créations !</p>
+            <div class="boutonsdiv">
+                <button class="boutons"><a href="#projets">Projets</a></button>
+                <button class="boutons"><a href="photos.html">Photos</a></button>
+            </div>
+        </div>
+        
+    
+    </div>
+
+     <section class="projets-container" id="projets">
+    <h2 class="section-title">PROJETS RÉCENTS</h2>
+    
+    <div class="grid-projets">
+        <div class="projet-card">
+            <div class="projet-image">
+                <img src="images/Logo_rekor_blanc.svg" alt="Description projet">
+                <div class="projet-overlay">
+                    <button><a href="https://rekor-mmi.webflow.io/">Voir le site</a></button>
+                    <button><a href="https://youtube.com/playlist?list=PLWiP2ULNpRU237W2MOwldirupT--d_yog&si=5yTOww-OaJynYKY2">Voir la série</a></button>
+                </div>
+            </div>
+            <div class="projet-info">
+                <h3>REKOR</h3>
+                <p>Création d'un média sportif</p>
+            </div>
+        </div>
+
+        
+
+         <div class="projet-card">
+            <div class="projet-image">
+                <img src="images/logo_essentiel_couleur.svg" alt="Description projet">
+                <div class="projet-overlay">
+                    <button><a href="https://but1.mmi-iutsf.org/S2/2024/essentiel.2024.mmibut1.org/">Voir le projet</a></button>
+                </div>
+            </div>
+            <div class="projet-info">
+                <h3>ESSENTIEL</h3>
+                <p>Création d'une marque de bière</p>
+            </div>
+        </div>
+
+        <div class="projet-card">
+            <div class="projet-image">
+                <img src="images/affiche_sos.svg" alt="Description projet">
+            </div>
+            <div class="projet-info">
+                <h3>AFFICHE DE SENSIBILISATION ENVIRONNEMENT</h3>
+                <p>Création graphique</p>
+            </div>
+        </div>
+
+        <div class="projet-card">
+            <div class="projet-image">
+                <img src="images/logo_sapik.svg" alt="Description projet">
+                <div class="projet-overlay">
+                    <button><a href="https://drive.google.com/file/d/1LsoGU7CQ_NnJTgWVA3YWSdXqcQyhWVHe/view">Voir le projet</a></button>
+                    <button><a href="https://drive.google.com/file/d/1sMTn2vkbrilptUtZMhTZ9N0JtCDXxevU/view">Voir la charte graphique</a></button>
+                </div>
+            </div>
+            <div class="projet-info">
+                <h3>SAPIK</h3>
+                <p>Refonte de l'identité graphique d'une marque de sauces piquantes</p>
+            </div>
+        </div>
+
+        <div class="projet-card">
+            <div class="projet-image">
+                <img src="images/affiche_biodiversite_PERDU_Lucas.jpg" alt="Description projet">
+            </div>
+            <div class="projet-info">
+                <h3>AFFICHE DE SENSIBILISATION BIODIVERSITE</h3>
+                <p>Création graphique</p>
+            </div>
+        </div>
+
+        <div class="projet-card">
+            <div class="projet-image">
+                <img src="images/soleil_abstrait.png" alt="Description projet">
+            </div>
+            <div class="projet-info">
+                <h3>SOLEIL ABSTRAIT</h3>
+                <p>Création graphique</p>
+            </div>
+        </div>
+
       </div>
+</section>
+ 
 </body>
 </html>
