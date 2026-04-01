@@ -1,6 +1,5 @@
 html, body {
     height: 100%;
-    background: #eee;
     background: url("images/lp_logoV3.svg") no-repeat center center;
     background-color: black;
 }
@@ -184,5 +183,51 @@ filter 0.4s ease;
         height: 2vh;
         width: 40vh;
         background: #999;
+    }
+}
+
+@media (max-width: 900px) {
+    /* On réactive le scroll vertical normal */
+    html, body {
+        overflow: auto !important;
+        height: auto !important;
+        background-image: none !important;
+        background-color: black;
+    }
+
+    .scroll-animations-example {
+        width: 100%;
+        height: auto;
+    }
+
+    .scrollsection {
+        display: flex !important;
+        flex-direction: column !important; /* Empilement vertical */
+        width: 100% !important;
+        min-width: 100% !important;
+        height: auto !important;
+        padding: 0 !important;
+        transform: none !important; /* Annule les calculs de Locomotive */
+    }
+
+    .item {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 0 40px 0 !important; /* Espace sous chaque photo */
+        position: static !important; /* Annule les positions bizarres */
+    }
+
+    .item::before {
+        display: none; /* On enlève le spacer de la version bureau */
+    }
+
+    .image {
+        position: relative !important;
+        opacity: 1 !important; /* On force l'affichage */
+        filter: grayscale(0) !important;
+        transform: none !important;
+        width: 100% !important;
+        height: auto !important;
+        pointer-events: auto !important;
     }
 }

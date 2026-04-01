@@ -49,7 +49,13 @@ class Example {
 
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    const example = new Example({
-        root: document.querySelector('.scroll-animations-example')
-    });
+    // On vérifie la largeur de l'écran (900px est une bonne limite)
+    if (window.innerWidth > 900) {
+        const example = new Example({
+            root: document.querySelector('.scroll-animations-example')
+        });
+    } else {
+        // Sur mobile, on retire la classe qui cache le scroll naturel
+        document.documentElement.classList.remove('has-scroll-smooth');
+    }
 });
