@@ -7,10 +7,19 @@
   src: url('fonts/erasdemiregular.otf');
 }
 
+@font-face {
+  font-family: 'montserrat';
+  src: url('fonts/Montserrat-Regular.ttf');
+}
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
 }
 nav{
   background-color: black;
@@ -62,16 +71,20 @@ ul{
   }
     
   #app h1{
-    font-size: 900%;
+    font-size: 880%;
   }
   #app p{
-    font-size: 160%;
+    font-size: 170%;
   }
 
-    h1, p {
-      font-family: 'montserrat';
+    h1 {
+      font-family: 'archivo';
 
   
+      text-align: center;
+    }
+    p{
+      font-family : 'montserrat';
       text-align: center;
     }
     
@@ -128,7 +141,7 @@ ul{
 }
 
 .section-title {
-    font-family: 'montserrat', sans-serif; 
+    font-family: 'Archivo', sans-serif; 
     font-size: 3rem;
     margin-bottom: 50px;
     border-left: 10px solid white;
